@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Портфолио - Панчева Альбина</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body class="page">
+    <!-- Skip link для доступности -->
+    <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="images/logo.png" alt="Логотип" class="logo" width="40" height="40">
+                <h1 class="site-title">Панчева Альбина</h1>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav" aria-label="Основная навигация">
+        <div class="container">
+            <div class="nav-content">
+                <a class="nav-brand" href="index.html">Portfolio</a>
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/projects.html">Проекты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/diary.html">Дневник</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/gallery.html">Галерея</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main" class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="hero-content">
+                    <h1 id="hero-title" class="hero-title">Привет! Я  Альбина</h1>
+                    <p class="hero-subtitle">Группа ЭФБО-12-24<br>Увлекаюсь веб-разработкой</p>
+                    <a href="assets/resume.pdf" class="btn btn-primary" download>
+                        Скачать резюме
+                    </a>
+                </div>
+            </section>
+
+
+            <!-- Skills Section -->
+            <section class="skills-section" aria-labelledby="skills-title">
+                <h2 id="skills-title" class="section-title">Мои навыки</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3 class="skill-name">HTML/CSS</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="--progress: 90%">
+                                <span class="skill-percent">90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="skill-name">JavaScript</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="--progress: 80%">
+                                <span class="skill-percent">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="skill-name">Bootstrap</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="--progress: 85%">
+                                <span class="skill-percent">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="skill-name">React</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="--progress: 60%">
+                                <span class="skill-percent">60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Preview Section -->
+            <section class="projects-preview" aria-labelledby="projects-title">
+                <h2 id="projects-title" class="section-title">Лучшие проекты</h2>
+                <div class="projects-preview__grid">
+                    <article class="project-card">
+                        <div class="project-card__icon">💻</div>
+                        <h3 class="project-card__title">Личный сайт</h3>
+                        <p class="project-card__description">Адаптивный сайт-портфолио на HTML/CSS с современными возможностями CSS</p>
+                        <div class="project-card__tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Адаптивность</span>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-card__icon">✅</div>
+                        <h3 class="project-card__title">Todo App</h3>
+                        <p class="project-card__description">Приложение для управления задачами на чистом JavaScript</p>
+                        <div class="project-card__tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Local Storage</span>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-card__icon">🛒</div>
+                        <h3 class="project-card__title">Интернет-магазин</h3>
+                        <p class="project-card__description">E-commerce проект на React с современным UI/UX</p>
+                        <div class="project-card__tags">
+                            <span class="tag">React</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Context</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="text-center">
+                    <a href="pages/projects.html" class="btn btn-secondary">Все проекты</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Панчева Альбина. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

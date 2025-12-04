@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Проекты - Панчева Альбина</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body class="page">
+    <!-- Skip link для доступности -->
+    <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="../images/logo.png" alt="Логотип" class="logo" width="40" height="40">
+                <h1 class="site-title">Панчева Альбина</h1>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav" aria-label="Основная навигация">
+        <div class="container">
+            <div class="nav-content">
+                <a class="nav-brand" href="../index.html">Portfolio</a>
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html" aria-current="page">Проекты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="diary.html">Дневник</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main" class="main">
+        <div class="container">
+            <h1 class="section-title">Мои проекты</h1>
+            
+            <!-- Filters -->
+            <section class="filters-section" aria-labelledby="filters-title">
+                <h2 id="filters-title" class="visually-hidden">Фильтры проектов</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="html">HTML/CSS</button>
+                    <button class="filter-btn" data-filter="js">JavaScript</button>
+                    <button class="filter-btn" data-filter="react">React</button>
+                </div>
+            </section>
+
+            <!-- Projects Grid -->
+            <section class="projects-area" aria-labelledby="projects-grid-title">
+                <h2 id="projects-grid-title" class="visually-hidden">Сетка проектов</h2>
+                <div class="projects-list" id="projectsGrid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-category="html">
+                        <div class="project-card__image">
+                            <img src="../images/project1.jpg" 
+                                 width="400" 
+                                 height="200" 
+                                 alt="Скриншот личного сайта" 
+                                 class="project-image">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Личный сайт</h3>
+                            <p class="project-card__description">Адаптивный сайт-портфолио с современными технологиями CSS</p>
+                            <div class="project-card__tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-category="js">
+                        <div class="project-card__image">
+                            <img src="../images/project2.jpg" 
+                                 width="400" 
+                                 height="200" 
+                                 alt="Скриншот Todo приложения" 
+                                 class="project-image">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Todo-приложение</h3>
+                            <p class="project-card__description">Приложение для управления задачами с локальным хранилищем</p>
+                            <div class="project-card__tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Local Storage</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-category="react">
+                        <div class="project-card__image">
+                            <img src="../images/project3.jpg" 
+                                 width="400" 
+                                 height="200" 
+                                 alt="Скриншот интернет-магазина" 
+                                 class="project-image">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Интернет-магазин</h3>
+                            <p class="project-card__description">E-commerce проект с React и современным UI</p>
+                            <div class="project-card__tags">
+                                <span class="tag">React</span>
+                                <span class="tag">API</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" data-category="html">
+                        <div class="project-card__image">
+                            <img src="../images/project4.jpg" 
+                                 width="400" 
+                                 height="200" 
+                                 alt="Скриншот адаптивного лендинга" 
+                                 class="project-image">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Адаптивный лендинг</h3>
+                            <p class="project-card__description">Лендинг страница с современным дизайном и анимациями</p>
+                            <div class="project-card__tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card" data-category="js">
+                        <div class="project-card__image">
+                            <img src="../images/project5.jpg" 
+                                 width="400" 
+                                 height="200" 
+                                 alt="Скриншот погодного приложения" 
+                                 class="project-image">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Погодное приложение</h3>
+                            <p class="project-card__description">Приложение для просмотра погоды с использованием API</p>
+                            <div class="project-card__tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">API</span>
+                                <span class="tag">Async/Await</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="project-card" data-category="react">
+                        <div class="project-card__image">
+                            <img src="../images/project6.jpg" 
+                                 width="400" 
+                                 height="200" 
+                                 alt="Скриншот социальной сети" 
+                                 class="project-image">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Социальная сеть</h3>
+                            <p class="project-card__description">Мини-социальная сеть с возможностью постинга и комментирования</p>
+                            <div class="project-card__tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Redux</span>
+                                <span class="tag">Firebase</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Панчева Альбина. Все права защищены</p>
+        </div>
+    </footer>
+
+    <script src="../js/projects.js"></script>
+</body>
+</html>
